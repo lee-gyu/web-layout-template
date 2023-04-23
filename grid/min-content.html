@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .max-content {
+        width: max-content;
+        border: 1px solid black;
+      }
+
+      .min-content {
+        width: min-content;
+        border: 1px solid black;
+      }
+
+      .min-content2 {
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: min-content 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+      }
+    </style>
+    <div class="max-content">Item aaasdasd widthas das dasd asd</div>
+    <div class="min-content">Item aaasdasd width zxcvasdfasdf</div>
+    <div class="min-content2">
+      <div>first</div>
+      <div>second</div>
+      <div>third</div>
+      <div>asdddddddd ddddd</div>
+      <div>2-2</div>
+      <div>2-3</div>
+    </div>
+  </body>
+</html>
