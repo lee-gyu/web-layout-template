@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .grid-auto-rows {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 120px;
+      }
+
+      .grid-auto-columns {
+        display: grid;
+        grid-template-rows: 100px 60px;
+        grid-auto-columns: 400px;
+        grid-auto-flow: column;
+      }
+    </style>
+    <div class="grid-auto-rows">
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+      <div class="item">d</div>
+    </div>
+    <div class="grid-auto-columns">
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+      <div class="item">a</div>
+    </div>
+  </body>
+</html>
