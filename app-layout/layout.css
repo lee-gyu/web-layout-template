@@ -1,0 +1,63 @@
+:root {
+  --app-header-height: 40px;
+}
+
+html {
+  min-width: 1600px;
+  min-height: 900px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb( 255 122 127 / 20% );
+}
+
+.app {
+  position: relative;
+  background: rgb( 0 0 0 / 20% );
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.app-main {
+  height: calc(100% - var(--app-header-height));
+  overflow: auto;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid gray;
+  padding: 8px 8px;
+  height: var(--app-header-height);
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.app-side-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 200px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  border-left: 1px solid gray;
+
+  z-index: 10;
+}
+
+.app-side-bar__items {
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+ul {
+  margin: 0
+}
