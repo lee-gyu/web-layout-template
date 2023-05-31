@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        background-color: gray;
+      }
+
+      div {
+        border: 1px solid black;
+        min-width: 0;
+        overflow: auto;
+      }
+
+      .inset-1 {
+        box-shadow: inset -10px 0 0 0px darkblue;
+      }
+
+      .inset-2 {
+        box-shadow: inset 0 10px 0 0px darkcyan;
+      }
+
+      .inset-3 {
+        box-shadow: inset 0 0 10px 0 darkcyan;
+      }
+
+      .inset-4 {
+        box-shadow: inset 0 0 0 10px darkcyan;
+      }
+
+      .inset-5 {
+        overflow-y: scroll;
+        box-shadow: inset -24px 0 0 0 gray, inset -25px 0 0 0 black;
+      }
+
+      .grid {
+        width: 800px;
+        height: 800px;
+        padding: 10px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+    </style>
+    <div class="grid">
+      <div class="inset-1"></div>
+      <div class="inset-2"></div>
+      <div class="inset-3"></div>
+      <div class="inset-4"></div>
+      <div class="inset-5"></div>
+    </div>
+  </body>
+</html>
